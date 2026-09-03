@@ -1,0 +1,16 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: khak-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: khak
+      POSTGRES_PASSWORD: khak
+      POSTGRES_DB: khak
+    ports:
+      - "5432:5432"
+    volumes:
+      - khak_pg:/var/lib/postgresql/data
+
+volumes:
+  khak_pg:

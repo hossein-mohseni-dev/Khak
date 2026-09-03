@@ -1,0 +1,9 @@
+cp .env.example .env
+npm install
+npm run dev
+
+http://localhost:5173
+demo@khak.app / Demo123!
+
+Mock UI only:
+npm run dev:mock

@@ -1,0 +1,81 @@
+// Production reference schema (PostgreSQL).
+// To switch: copy this file over schema.prisma, set DATABASE_URL, then:
+//   npx prisma generate && npx prisma db push
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id            String          @id @default(cuid())
+  name          String
+  email         String          @unique
+  passwordHash  String
+  city          String          @default("")
+  farm          String          @default("")
+  phone         String          @default("")
+  createdAt     DateTime        @default(now())
+  history       Diagnosis[]
+  ratings       Rating[]
+  consultations Consultation[]
+  orders        Order[]
+}
+
+model Diagnosis {
+  id          String   @id @default(cuid())
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  userId      String
+  createdAt   DateTime @default(now())
+  filename    String
+  source      String
+  name        String
+  plant       String
+  severity    String
+  confidence  Int
+  description String
+  treatment   String
+  productIds  String
+  expertId    Int
+}
+
+model Rating {
+  id        String   @id @default(cuid())
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  userId    String
+  expertId  Int
+  score     Int
+  comment   String   @default("")
+  createdAt DateTime @default(now())
+
+  @@unique([userId, expertId])
+}
+
+model Consultation {
+  id            String   @id @default(cuid())
+  user          User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  userId        String
+  expertId      Int
+  expertName    String
+  topic         String
+  message       String
+  preferredDate String   @default("")
+  status        String   @default("pending")
+  createdAt     DateTime @default(now())
+}
+
+model Order {
+  id        String   @id @default(cuid())
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  userId    String
+  items     String
+  subtotal  Float
+  shipping  Float
+  total     Float
+  status    String   @default("confirmed")
+  createdAt DateTime @default(now())
+}

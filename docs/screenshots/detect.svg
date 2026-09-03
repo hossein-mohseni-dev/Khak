@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" fill="#f7f5f2"/>
+  <rect width="1280" height="64" fill="#ffffff"/>
+  <rect x="32" y="16" width="36" height="36" rx="8" fill="#1b5e20"/>
+  <text x="78" y="40" font-family="Inter, Arial" font-size="20" font-weight="700" fill="#3c342e">Khak</text>
+  <text x="80" y="130" font-family="Inter, Arial" font-size="32" font-weight="700" fill="#3c342e">Disease Detection</text>
+  <rect x="80" y="170" width="700" height="420" rx="18" fill="#ffffff" stroke="#d6cdc0"/>
+  <rect x="110" y="200" width="640" height="240" rx="12" fill="#ebe6df"/>
+  <text x="360" y="330" font-family="Inter, Arial" font-size="20" fill="#655647">leaf.jpg analyzed</text>
+  <rect x="110" y="470" width="180" height="40" rx="10" fill="#1b5e20"/>
+  <text x="138" y="496" font-family="Inter, Arial" font-size="14" fill="#fff">Analyze Image</text>
+  <rect x="820" y="170" width="380" height="420" rx="18" fill="#ffffff" stroke="#d6cdc0"/>
+  <text x="850" y="220" font-family="Inter, Arial" font-size="13" fill="#655647">Detected · huggingface</text>
+  <text x="850" y="258" font-family="Inter, Arial" font-size="26" font-weight="700" fill="#3c342e">Early Blight</text>
+  <text x="850" y="300" font-family="Inter, Arial" font-size="36" font-weight="700" fill="#1b5e20">91%</text>
+  <text x="850" y="360" font-family="Inter, Arial" font-size="14" fill="#52463b">Copper fungicide · remove leaves</text>
+  <rect x="850" y="400" width="220" height="36" rx="10" fill="#e8f5e9"/>
+  <text x="870" y="423" font-family="Inter, Arial" font-size="13" fill="#145a1a">Talk to Dr. Sara</text>
+</svg>

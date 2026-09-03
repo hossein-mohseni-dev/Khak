@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" fill="#f7f5f2"/>
+  <rect width="1280" height="64" fill="#ffffff"/>
+  <rect x="32" y="16" width="36" height="36" rx="8" fill="#1b5e20"/>
+  <text x="78" y="40" font-family="Inter, Arial" font-size="20" font-weight="700" fill="#3c342e">Khak</text>
+  <text x="420" y="40" font-family="Inter, Arial" font-size="14" fill="#1b5e20">Home</text>
+  <text x="490" y="40" font-family="Inter, Arial" font-size="14" fill="#655647">Detect</text>
+  <text x="560" y="40" font-family="Inter, Arial" font-size="14" fill="#655647">Experts</text>
+  <text x="640" y="40" font-family="Inter, Arial" font-size="14" fill="#655647">Store</text>
+  <rect x="1120" y="18" width="88" height="28" rx="8" fill="#1b5e20"/>
+  <text x="1140" y="37" font-family="Inter, Arial" font-size="12" fill="#fff">Sign Up</text>
+  <text x="80" y="220" font-family="Inter, Arial" font-size="44" font-weight="700" fill="#3c342e">Detect your plant’s</text>
+  <text x="80" y="276" font-family="Inter, Arial" font-size="44" font-weight="700" fill="#1b5e20">disease smartly</text>
+  <text x="80" y="330" font-family="Inter, Arial" font-size="16" fill="#655647">Upload a leaf photo, get an AI diagnosis, talk to an expert.</text>
+  <rect x="80" y="370" width="200" height="48" rx="12" fill="#1b5e20"/>
+  <text x="104" y="400" font-family="Inter, Arial" font-size="16" fill="#fff">Start Free Detection</text>
+  <circle cx="980" cy="340" r="150" fill="#e8f5e9"/>
+  <circle cx="980" cy="340" r="118" fill="#ffffff"/>
+  <text x="936" y="350" font-family="Inter, Arial" font-size="42">🌿</text>
+</svg>

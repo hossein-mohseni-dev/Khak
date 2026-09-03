@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: khak-api
+    runtime: node
+    buildCommand: npm install && npx prisma generate
+    startCommand: npx prisma db push && node server/index.js
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: DATABASE_URL
+        sync: false
+      - key: JWT_SECRET
+        generateValue: true
+      - key: CORS_ORIGIN
+        sync: false
+      - key: HF_TOKEN
+        sync: false
